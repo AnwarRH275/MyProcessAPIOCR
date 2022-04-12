@@ -1,0 +1,593 @@
+
+2021-12-09 14:12:33.434304: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 14:12:33.434304: wfastcgi.py 3.0.0 initialized
+2021-12-09 14:14:13.429366: wfastcgi.py exiting because my_app.py has changed, matching .*((\.py)|(\.config))$
+2021-12-09 14:14:13.437446: Running on_exit tasks
+2021-12-09 14:14:38.738001: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 14:14:38.738001: wfastcgi.py 3.0.0 initialized
+2021-12-09 14:27:04.238525: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 14:27:04.254276: wfastcgi.py 3.0.0 initialized
+2021-12-09 14:37:01.656514: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 14:37:01.660404: wfastcgi.py 3.0.0 initialized
+2021-12-09 17:12:04.163776: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 17:12:04.164776: wfastcgi.py 3.0.0 initialized
+2021-12-09 17:18:13.211615: wfastcgi.py exiting because my_app.py has changed, matching .*((\.py)|(\.config))$
+2021-12-09 17:18:13.212615: Running on_exit tasks
+2021-12-09 17:18:22.367159: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 17:18:22.368135: wfastcgi.py 3.0.0 initialized
+2021-12-09 21:10:57.067049: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:10:57.068051: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+2021-12-09 21:10:57.069051: Running on_exit tasks
+2021-12-09 21:10:57.069051: wfastcgi.py 3.0.0 closed
+2021-12-09 21:12:04.915373: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:12:04.916374: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+2021-12-09 21:12:04.917374: Running on_exit tasks
+2021-12-09 21:12:04.918375: wfastcgi.py 3.0.0 closed
+2021-12-09 21:12:43.151056: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:12:43.152056: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 115
+    'localFile':'C:\inetpub\wwwroot\Flask_IIS\'+UPLOAD_FOLDER+'\'+filename[:-4]+'_min.pdf'
+                                                                                         ^
+SyntaxError: unexpected character after line continuation character
+2021-12-09 21:12:43.152056: Running on_exit tasks
+2021-12-09 21:12:43.153054: wfastcgi.py 3.0.0 closed
+2021-12-09 21:16:37.723119: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 21:16:37.724120: wfastcgi.py 3.0.0 initialized
+2021-12-09 21:25:40.652055: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 21:25:40.654057: wfastcgi.py 3.0.0 initialized
+2021-12-09 21:30:24.533234: wfastcgi.py exiting because my_app.py has changed, matching .*((\.py)|(\.config))$
+2021-12-09 21:30:24.534235: Running on_exit tasks
+2021-12-09 21:30:45.055850: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 119
+    resp.headers.add('Access-Control-Allow-Origin', '*')
+                                                       ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:30:45.056851: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 119
+    resp.headers.add('Access-Control-Allow-Origin', '*')
+                                                       ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-09 21:30:45.056851: Running on_exit tasks
+2021-12-09 21:30:45.056851: wfastcgi.py 3.0.0 closed
+2021-12-09 21:30:51.363368: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 119
+    resp.headers.add('Access-Control-Allow-Origin', '*')
+                                                       ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:30:51.364343: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 119
+    resp.headers.add('Access-Control-Allow-Origin', '*')
+                                                       ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-09 21:30:51.364343: Running on_exit tasks
+2021-12-09 21:30:51.365347: wfastcgi.py 3.0.0 closed
+2021-12-09 21:37:46.463984: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 87, in <module>
+    @cross_origin(origin='149.202.73.148',headers=['Content-Type','Authorization'])
+NameError: name 'cross_origin' is not defined
+
+
+StdOut: 
+
+StdErr: 
+2021-12-09 21:37:46.464990: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 87, in <module>
+    @cross_origin(origin='149.202.73.148',headers=['Content-Type','Authorization'])
+NameError: name 'cross_origin' is not defined
+2021-12-09 21:37:46.465987: Running on_exit tasks
+2021-12-09 21:37:46.466990: wfastcgi.py 3.0.0 closed
+2021-12-09 21:38:57.570628: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 21:38:57.570628: wfastcgi.py 3.0.0 initialized
+2021-12-09 21:44:07.766193: wfastcgi.py exiting because my_app.py has changed, matching .*((\.py)|(\.config))$
+2021-12-09 21:44:07.766193: Running on_exit tasks
+2021-12-09 21:44:20.099993: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 21:44:20.101970: wfastcgi.py 3.0.0 initialized
+2021-12-09 22:02:11.142329: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 22:02:11.143330: wfastcgi.py 3.0.0 initialized
+2021-12-09 22:09:13.654249: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-09 22:09:13.655250: wfastcgi.py 3.0.0 initialized
+2021-12-10 09:14:50.613549: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 09:14:50.615551: wfastcgi.py 3.0.0 initialized
+2021-12-10 09:56:56.836248: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 09:56:56.837253: wfastcgi.py 3.0.0 initialized
+2021-12-10 10:03:43.308046: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 10:03:43.310018: wfastcgi.py 3.0.0 initialized
+2021-12-10 10:27:04.818748: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 10:27:04.820747: wfastcgi.py 3.0.0 initialized
+2021-12-10 10:34:25.543042: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 10:34:25.545043: wfastcgi.py 3.0.0 initialized
+2021-12-10 11:16:32.049391: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 11:16:32.064379: wfastcgi.py 3.0.0 initialized
+2021-12-10 11:22:47.491626: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 11:22:47.492627: wfastcgi.py 3.0.0 initialized
+2021-12-10 11:40:22.669895: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 11:40:22.670866: wfastcgi.py 3.0.0 initialized
+2021-12-10 11:46:25.710088: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 11:46:25.711089: wfastcgi.py 3.0.0 initialized
+2021-12-10 12:09:36.633065: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 12:09:36.634065: wfastcgi.py 3.0.0 initialized
+2021-12-10 12:17:02.214224: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 12:17:02.215228: wfastcgi.py 3.0.0 initialized
+2021-12-10 12:37:04.789174: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 12:37:04.791180: wfastcgi.py 3.0.0 initialized
+2021-12-10 13:04:00.768288: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 13:04:00.771291: wfastcgi.py 3.0.0 initialized
+2021-12-10 13:18:08.129547: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 13:18:08.175580: wfastcgi.py 3.0.0 initialized
+2021-12-10 13:32:31.080055: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 13:32:31.090064: wfastcgi.py 3.0.0 initialized
+2021-12-10 13:41:51.103976: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 13:41:51.106972: wfastcgi.py 3.0.0 initialized
+2021-12-10 13:47:40.385733: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 13:47:40.387734: wfastcgi.py 3.0.0 initialized
+2021-12-10 15:15:39.113240: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:15:39.114241: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:15:39.114241: Running on_exit tasks
+2021-12-10 15:15:39.114241: wfastcgi.py 3.0.0 closed
+2021-12-10 15:15:42.931960: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:15:42.931960: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:15:42.931960: Running on_exit tasks
+2021-12-10 15:15:42.931960: wfastcgi.py 3.0.0 closed
+2021-12-10 15:15:57.553073: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:15:57.578092: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:15:57.579092: Running on_exit tasks
+2021-12-10 15:15:57.579092: wfastcgi.py 3.0.0 closed
+2021-12-10 15:16:23.621640: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:16:23.623641: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:16:23.623641: Running on_exit tasks
+2021-12-10 15:16:23.624642: wfastcgi.py 3.0.0 closed
+2021-12-10 15:16:59.700108: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:16:59.702110: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 65
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:16:59.702110: Running on_exit tasks
+2021-12-10 15:16:59.703110: wfastcgi.py 3.0.0 closed
+2021-12-10 15:22:54.680938: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:22:54.681938: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:22:54.682939: Running on_exit tasks
+2021-12-10 15:22:54.683939: wfastcgi.py 3.0.0 closed
+2021-12-10 15:22:57.577994: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:22:57.578995: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:22:57.578995: Running on_exit tasks
+2021-12-10 15:22:57.579999: wfastcgi.py 3.0.0 closed
+2021-12-10 15:23:18.786099: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:23:18.787100: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:23:18.788101: Running on_exit tasks
+2021-12-10 15:23:18.788101: wfastcgi.py 3.0.0 closed
+2021-12-10 15:23:29.904023: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:23:29.905024: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:23:29.906025: Running on_exit tasks
+2021-12-10 15:23:29.907022: wfastcgi.py 3.0.0 closed
+2021-12-10 15:24:27.947358: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+
+StdOut: 
+
+StdErr: 
+2021-12-10 15:24:27.948359: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+  File "c:\python38\lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+  File "C:\inetpub\wwwroot\Flask_IIS\.\my_app.py", line 66
+    os.remove(input_file)
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-12-10 15:24:27.949360: Running on_exit tasks
+2021-12-10 15:24:27.950361: wfastcgi.py 3.0.0 closed
+2021-12-10 15:35:15.294959: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 15:35:15.296960: wfastcgi.py 3.0.0 initialized
+2021-12-10 15:45:11.782968: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-10 15:45:11.784941: wfastcgi.py 3.0.0 initialized
+2021-12-12 00:17:40.500642: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-12 00:17:40.515653: wfastcgi.py 3.0.0 initialized
+2021-12-13 16:54:42.453428: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-13 16:54:42.467438: wfastcgi.py 3.0.0 initialized
+2021-12-13 23:42:19.512165: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-13 23:42:19.523173: wfastcgi.py 3.0.0 initialized
+2021-12-16 09:43:42.517731: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-16 09:43:42.525735: wfastcgi.py 3.0.0 initialized
+2021-12-18 05:17:35.928061: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-18 05:17:35.935063: wfastcgi.py 3.0.0 initialized
+2021-12-18 06:11:23.204998: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-18 06:11:23.205999: wfastcgi.py 3.0.0 initialized
+2021-12-21 10:52:59.436817: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 10:52:59.437818: wfastcgi.py 3.0.0 initialized
+2021-12-21 15:45:26.713000: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 15:45:26.769016: wfastcgi.py 3.0.0 initialized
+2021-12-21 16:33:05.860682: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 16:33:05.861702: wfastcgi.py 3.0.0 initialized
+2021-12-21 16:44:08.448712: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 16:44:08.448712: wfastcgi.py 3.0.0 initialized
+2021-12-21 17:04:21.910821: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 17:04:21.911822: wfastcgi.py 3.0.0 initialized
+2021-12-21 17:42:54.086409: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 17:42:54.088406: wfastcgi.py 3.0.0 initialized
+2021-12-21 17:48:38.644637: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-21 17:48:38.645638: wfastcgi.py 3.0.0 initialized
+2021-12-22 09:36:47.946220: wfastcgi.py will restart when files in C:\inetpub\wwwroot\Flask_IIS\ are changed: .*((\.py)|(\.config))$
+2021-12-22 09:36:47.947221: wfastcgi.py 3.0.0 initialized
