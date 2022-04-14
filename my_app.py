@@ -83,7 +83,7 @@ def sendDataExtractor(NameFournisseur,bd,path,fileName):
         try:
             if '.' in dictionnary[item['indexer']] or ',' in dictionnary[item['indexer']]:
                 if ',' in dictionnary[item['indexer']]:
-                    print(re.findall("\d+\,\d+", dictionnary[item['indexer']])[0] )
+                   # print(re.findall("\d+\,\d+", dictionnary[item['indexer']])[0] )
                     sendData[item['champsIndex']]= re.findall("\d+\,\d+", dictionnary[item['indexer']])[0] 
                 else:    
                     sendData[item['champsIndex']]= re.findall("\d+\.\d+", dictionnary[item['indexer']])[0]
@@ -95,7 +95,39 @@ def sendDataExtractor(NameFournisseur,bd,path,fileName):
                     sendData[item['champsIndex']]= dictionnary[item['indexer']].replace('@ ','')
         except:
             sendData[item['champsIndex']] = ''
+        sendData['status'] = 'Indexation automatique'
     return sendData
+
+
+def SelectStatusFournisseur(bd,path,nameFile):
+    exist = False
+    fourni = ''
+    invoice = pytesseract.image_to_string(Image.open(path+convertPdf2Img(path,nameFile)),config=custom_config)
+    req = 'select * from Fournisseur'
+    allFournisseur = getDataFournisseur(bd,req)
+    for founisseur in allFournisseur:
+        if founisseur['name'].lower() in invoice.lower():
+            exist = True
+            fourni = founisseur['name']
+    return exist,fourni
+
+def managementData(bd,path,nameFile):
+    
+    if SelectStatusFournisseur(bd,path,nameFile)[0]:
+        summary = sendDataExtractor(SelectStatusFournisseur(bd,path,nameFile)[1],bd,path,nameFile)
+        summary['name_entreprise'] = SelectStatusFournisseur(bd,path,nameFile)[1]
+    else :
+        summary = {"status":'Nouvelle Facture'}
+    return summary
+
+
+def newFacture(bd,keys,path,file):
+    job = (len(getDataFournisseur(bd,'select * from Fournisseur')),keys['name_entreprise'])
+    addFournisseur(bd,job)
+    dictionnary = indexation(path,file)
+    vetract = extract_index(bd,keys,dictionnary,keys['name_entreprise'])
+    return vetract
+
 # Code API 
 def creation(bd,req):
     c = connect(bd)
@@ -180,6 +212,32 @@ def removed():
 @app.route('/api', methods=['POST'])
 def upload_file():
     # check if the post request has the file part
+    try:
+        date_facture = request.form["date_facture"]
+    except:
+        date_facture = ''
+      
+    try:
+        name_entreprise = request.form["name_entreprise"]
+    except:
+        name_entreprise = ''
+    
+    try:
+        numFC = request.form["numFC"]
+    except:
+        numFC = ''
+    
+    try:
+        ville = request.form["ville"]
+    except:
+        ville = ''
+
+    try:
+        montant = request.form["montant"]
+    except:
+        montant = ''
+
+
     if 'file' not in request.files:
         resp = jsonify({'message' : 'No file part in the request'})
         resp.status_code = 400
@@ -196,8 +254,15 @@ def upload_file():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             success = True
             # Tratement fournisseur existant
-            
-            summary = sendDataExtractor('Genious Communications SARL',"MyProcessOCR3.sqlite",os.path.join(app.config['UPLOAD_FOLDER'],filename).replace(filename,''),filename)
+            if date_facture == '' and name_entreprise == '' and numFC == '' and ville == '' and montant == '':
+                summary = managementData("MyProcessOCR3.sqlite",os.path.join(app.config['UPLOAD_FOLDER'],filename).replace(filename,''),filename)
+            else:
+                keys = {'name_entreprise': name_entreprise,
+                        'ville': ville,
+                        'numFC': numFC,
+                        'date_facture': date_facture,
+                        'montant': montant}
+                summary = newFacture("MyProcessOCR3.sqlite",keys,os.path.join(app.config['UPLOAD_FOLDER'],filename).replace(filename,''),filename)
 
         else:
             errors[file.filename] = 'File type is not allowed'
